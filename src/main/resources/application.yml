@@ -8,6 +8,10 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+  thymeleaf:
+    cache: false
+#    prefix: /templates/
+#    suffix: .html
 name : Hello!
 user :
  userName : this is

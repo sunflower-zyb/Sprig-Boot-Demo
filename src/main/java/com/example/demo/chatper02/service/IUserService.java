@@ -9,4 +9,13 @@ public interface IUserService {
     List<User> findAll();
 
     User findByUserName(String userName);
+
+    User findById(Long id);
+
+    void edit(User user);
+
+    void delete(Long id);
+
+    void save(User user);
+
 }

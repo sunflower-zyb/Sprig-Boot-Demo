@@ -25,4 +25,24 @@ public class IUserServiceImpl implements IUserService {
     public User findByUserName(String userName) {
         return userRepository.findByUserName(userName);
     }
+
+    @Override
+    public User findById(Long id) {
+        return userRepository.findById(id);
+    }
+
+    @Override
+    public void edit(User user) {
+        userRepository.save(user);
+    }
+
+    @Override
+    public void delete(Long id) {
+        userRepository.delete(id);
+    }
+
+    @Override
+    public void save(User user) {
+        userRepository.save(user);
+    }
 }
